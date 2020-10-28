@@ -1,0 +1,26 @@
+.banner {
+    background-image: url(../public/assets/images/logo_white.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 500% 120%;
+}
+
+@screen sm {
+    .banner {
+        background-size: 240% 120%;
+    }
+}
+
+@screen md {
+    .banner {
+        background-size: 195% 110%;
+        background-position-y: 150%;
+    }
+}
+
+@screen lg {
+    .banner {
+        background-size: 180% 120%;
+        background-position-y: 50%;
+    }
+}
