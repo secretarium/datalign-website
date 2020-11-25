@@ -19,21 +19,14 @@ RUN echo "export PATH=$PATH:./node_modules/.bin" > /etc/environment
 
 # Add package.json manifests
 COPY ./package.json ./
-COPY --from=build /app/packages/strapi/package.json ./packages/strapi/
 COPY --from=build /app/packages/www/package.json ./packages/www/
 
 # Copy built artifacts
-COPY --from=build /app/packages/strapi/api ./packages/strapi/api
-COPY --from=build /app/packages/strapi/build ./packages/strapi/build
-COPY --from=build /app/packages/strapi/config ./packages/strapi/config
-COPY --from=build /app/packages/strapi/extensions ./packages/strapi/extensions
-COPY --from=build /app/packages/strapi/public ./packages/strapi/public
 COPY --from=build /app/packages/www/.next ./packages/www/.next
 COPY --from=build /app/packages/www/public ./packages/www/public
 
 # Copy base modules
 COPY --from=base /app/node_modules ./node_modules
-COPY --from=base /app/packages/strapi/node_modules ./packages/strapi/node_modules
 COPY --from=base /app/packages/www/node_modules ./packages/www/node_modules
 
 # Configure exposure and startup
