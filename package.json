@@ -1,53 +1,78 @@
 {
     "name": "@secretarium/dataline",
-    "version": "1.0.0",
+    "version": "0.0.5",
+    "private": true,
+    "description": "Privacy preserving QRCode based checking application",
+    "repository": "https://github.com/secretarium/danie-website",
+    "author": "Florian Guitton <florian@secretarium.com> (https://github.com/fguitton)",
     "license": "MIT",
+    "packman": "yarn@2.1.1",
     "scripts": {
-        "dev": "next -p 3054",
-        "build": "next build",
-        "start": "next start",
-        "typecheck": "tsc"
+        "lint": "yarn workspaces foreach run lint",
+        "lint:fix": "yarn workspaces foreach run lint:fix",
+        "dockerize": "docker build -t secretarium/moai-website .",
+        "build": "yarn workspaces foreach run build",
+        "start": "yarn workspaces foreach run start",
+        "dev:website": "yarn workspaces foreach -p -i --include @secretarium/danie-website-www run dev",
+        "test": "yarn workspaces foreach run test",
+        "test:mutation": "yarn workspaces foreach run test:mutation",
+        "preinstall": "node ./scripts/hintYarn.js",
+        "release": "release-it"
     },
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "1.2.32",
-        "@fortawesome/free-brands-svg-icons": "5.15.1",
-        "@fortawesome/react-fontawesome": "0.1.11",
-        "@secretarium/connector": "0.3.1",
-        "classnames": "2.2.6",
-        "date-fns": "2.16.1",
-        "framer-motion": "2.7.8",
-        "gray-matter": "4.0.2",
-        "html-pdf": "2.2.0",
-        "isomorphic-unfetch": "3.1.0",
-        "next": "9.5.3",
-        "nodemailer": "6.4.13",
-        "nprogress": "0.2.0",
-        "qrcode-svg": "1.1.0",
-        "react": "16.13.1",
-        "react-dom": "16.13.1",
-        "react-ga": "3.1.2",
-        "react-sticky-el": "2.0.5",
-        "remark": "12.0.1",
-        "remark-html": "13.0.1"
+    "keywords": [
+        "secretarium",
+        "check-in"
+    ],
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "9.5.3",
-        "@types/classnames": "2.2.10",
-        "@types/html-pdf": "2.1.2",
-        "@types/jest": "26.0.14",
-        "@types/node": "14.11.5",
-        "@types/nodemailer": "6.4.0",
-        "@types/nprogress": "0.2.0",
-        "@types/qrcode-svg": "1.1.0",
-        "@types/react": "16.9.51",
-        "@types/react-dom": "16.9.8",
-        "@types/react-sticky-el": "1.0.2",
-        "postcss-preset-env": "6.7.0",
-        "tailwindcss": "1.8.12",
-        "typescript": "4.0.3",
-        "url-loader": "4.1.0"
+        "@commitlint/config-conventional": "11.0.0",
+        "@release-it/conventional-changelog": "2.0.0",
+        "@typescript-eslint/eslint-plugin": "4.4.0",
+        "@typescript-eslint/parser": "4.4.0",
+        "commitlint": "11.0.0",
+        "eslint": "7.10.0",
+        "eslint-config-react-app": "5.2.1",
+        "eslint-config-recommended": "4.1.0",
+        "eslint-plugin-flowtype": "5.2.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-jest": "24.1.0",
+        "eslint-plugin-jsx-a11y": "6.3.1",
+        "eslint-plugin-react": "7.21.3",
+        "eslint-plugin-react-hooks": "4.1.2",
+        "expo-yarn-workspaces": "1.2.1",
+        "husky": "4.3.0",
+        "release-it": "14.0.4"
     },
-    "browser": {
-        "html-pdf": false
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "release-it": {
+        "git": {
+            "commitMessage": "chore: Release ${version}",
+            "tagName": "v${version}"
+        },
+        "npm": {
+            "publish": true
+        },
+        "github": {
+            "release": true
+        },
+        "plugins": {
+            "@release-it/conventional-changelog": {
+                "preset": "angular"
+            }
+        }
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "eslintConfig": {
+        "extends": "./eslint.config.js"
     }
 }

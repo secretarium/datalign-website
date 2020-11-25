@@ -57,13 +57,6 @@ const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
     return (
         <>
             <Meta />
-            <Sticky
-            // className={layoutStyles.stickyPanel}
-            // stickyClassName={layoutStyles.stuck}
-            // onFixedToggle={(fixed) => setFixedToggle(fixed)}
-            >
-                <NavBar fixedToggle={fixedToggle} />
-            </Sticky>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

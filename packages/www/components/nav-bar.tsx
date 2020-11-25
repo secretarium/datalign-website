@@ -59,8 +59,8 @@ const NavBar: React.FC<NavBarProps> = ({ fixedToggle }) => {
         //         : null
         //     }
         // </div>
-        <div className={`text-white text-center text-base sm:text-lg md:text-xl bg-blue-500 ${navBarStyles.topBanner}`}>
-            DANIE Community launch event 28th October 2020!
+        <div className={`text-white text-center text-base sm:text-lg md:text-xl bg-blue-500 ${navBarStyles.topBanner} invisible`}>
+            {/* DANIE Community launch event 28th October 2020! */}
         </div>
     );
 };
