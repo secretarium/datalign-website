@@ -10,7 +10,7 @@
     "scripts": {
         "lint": "yarn workspaces foreach run lint",
         "lint:fix": "yarn workspaces foreach run lint:fix",
-        "dockerize": "docker build -t secretarium/moai-website .",
+        "dockerize": "docker build -t secretarium/dataline .",
         "build": "yarn workspaces foreach run build",
         "start": "yarn workspaces foreach run start",
         "dev:website": "yarn workspaces foreach -p -i --include @secretarium/danie-website-www run dev",
