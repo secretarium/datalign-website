@@ -14,7 +14,7 @@ const Index: React.FC = () => {
     return (
         <>
             <Head>
-                <title>DATALIGN Privacy Notice</title>
+                <title>DATALIGN</title>
             </Head>
             <Layout>
                 <div className={styles.lightTriangle}></div>
