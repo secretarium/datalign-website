@@ -6,13 +6,16 @@ import Container from '../components/container';
 import macbookPro from '../public/assets/images/macbookProDataline.svg';
 import secreteriumLogoPartners from '../public/assets/images/secretarium.svg';
 import intel from '../public/assets/images/intel.svg';
-import mainLogo from '../public/assets/images/mainLogo.png';
 import swisscom from '../public/assets/images/swisscom.svg';
 import macWhite from '../public/assets/images/whiteMac.svg';
+import Head from 'next/head';
 
 const Index: React.FC = () => {
     return (
         <>
+            <Head>
+                <title>DATALIGN Privacy Notice</title>
+            </Head>
             <Layout>
                 <div className={styles.lightTriangle}></div>
                 <section className={`overflow-hidden ${styles.logoBackground}`} >

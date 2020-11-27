@@ -8,7 +8,7 @@ const Legal: React.FC = () => {
     return (
         <Layout>
             <Head>
-                <title>DANIE Privacy Notice</title>
+                <title>DATALIGN Privacy Notice</title>
             </Head>
             <Container>
                 <section id="legal" className="mb-20 px-8">
