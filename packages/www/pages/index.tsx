@@ -24,7 +24,7 @@ const Index: React.FC = () => {
                             <div className="sm:w-2/3 md:px-12 md:px-8 lg:w-1/2 text-white">
                                 <PostTitle>Datalign <br></br> by Secretarium</PostTitle>
                                 <p className="z-10 sm:text-base md:text-xl text-light-blue font-bold">
-                                   Enabling collborative insight on confidential data since 2018
+                                    Enabling collborative insight on confidential data since 2018
                                 </p>
                             </div>
                         </div>
@@ -34,14 +34,14 @@ const Index: React.FC = () => {
                     <div className="flex ">
                         <div className="w-full text-center px-8 py-20 ">
                             <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold">
-                                    Provably confidential collaboration with peers
+                                Provably confidential collaboration with peers
                             </h2>
                             <h3 className="text-xl md:text-2xl text-light-blue pb-4 font-bold">
                                 We provide next generation benchmarking for data reconciliation.
                             </h3>
                             <p className="text-lg pb-12 text-accent-1 font-semibold ">
-                                 Datalign allows you to collaborate with peers, without having to rely on a trusted
-                                    third-party, in a fully privacy-preserving and automated way
+                                Datalign allows you to collaborate with peers, without having to rely on a trusted
+                                third-party, in a fully privacy-preserving and automated way
                             </p>
                         </div>
                     </div>
@@ -54,14 +54,14 @@ const Index: React.FC = () => {
                                     Data is never disclosed
                                 </h2>
                                 <h3 className="  text-lg text-light-blue pb-4 font-bold lg:text-2xl">
-                                Datalign is built on a confidential computing technology top make sure data submissions are kept in secret
+                                    Datalign is built on a confidential computing technology top make sure data submissions are kept in secret
                                 </h3>
                                 <p className=" text-accent-1 text-lg md:pb-12 font-semibold">
-                                  Meaning you can pool your data with peers whils making sure nobody, including us can see your data.
+                                    Meaning you can pool your data with peers whils making sure nobody, including us can see your data.
                                 </p>
                             </div>
                             <div className='md:w-1/2  lg:pt-0 '>
-                                <img alt='computerMac' src={macbookPro} className={`${styles.iconMacPro}`}/>
+                                <img alt='computerMac' src={macbookPro} className={`${styles.iconMacPro}`} />
                             </div>
                         </div>
                     </Container>
@@ -74,10 +74,10 @@ const Index: React.FC = () => {
                                     Datalign benchmarks all types of datasets
                                 </h2>
                                 <h3 className="text-white text-xl md:text-2xl pb-4 font-bold">
-                                Now you can compare sensitive data with peers, without worrying about data privacy.
+                                    Now you can compare sensitive data with peers, without worrying about data privacy.
                                 </h3>
                                 <p className="text-white text-lg pb-12 font-semibold">
-                                  Datalign allows you to compare all kinds of data metrics, like client reference data, commercial margins and product prices, while perserving total secrey and anonyminity
+                                    Datalign allows you to compare all kinds of data metrics, like client reference data, commercial margins and product prices, while perserving total secrey and anonyminity
                                 </p>
                             </div>
                         </div>
@@ -94,10 +94,10 @@ const Index: React.FC = () => {
                                     What makes Datalign Unique?
                                 </h2>
                                 <h3 className="text-xl md:text-2xl text-light-blue pb-4 font-bold">
-                                Datalign is a decentralised solution built for collaboration.
+                                    Datalign is a decentralised solution built for collaboration.
                                 </h3>
                                 <p className="text-lg pb-12 text-accent-1 font-semibold">
-                                   Each party has control of their own data, but no ties to the other participants. Datalign is easy to use and can process more than 2000 records per second
+                                    Each party has control of their own data, but no ties to the other participants. Datalign is easy to use and can process more than 2000 records per second
                                 </p>
                             </div>
                         </div>
@@ -111,10 +111,10 @@ const Index: React.FC = () => {
                                     The only tested solution proven to maintain complete privacy for data collaboration
                                 </h2>
                                 <p className="text-lg md:text-2xl pb-12 font-bold text-white">
-                                   Datalign has been used by some of the largest banks in the world and has alredy been trailed to succesfullt reconcile millions of records across peers securely
+                                    Datalign has been used by some of the largest banks in the world and has alredy been trailed to succesfullt reconcile millions of records across peers securely
                                 </p>
                                 <p className="text-lg  md:text-2xl pb-12 text-white ">
-                                   It is part of the product suite for the DANIE group: a community of finacical instiations harnessing the altes pricvacy and enhancing technology to collaborate and share insight securely.
+                                    It is part of the product suite for the DANIE group: a community of finacical instiations harnessing the altes pricvacy and enhancing technology to collaborate and share insight securely.
                                 </p>
                             </div>
                         </div>
@@ -124,12 +124,12 @@ const Index: React.FC = () => {
                     <div>
                         <div className="w-full text-center px-8 py-20">
                             <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold lg:text-5xl">
-                                    Who's behind Datalign?
+                                Who's behind Datalign?
                             </h2>
                             <div className="sm:w-full text-accent-1 text-base md:text-xl text-center lg:flex ">
-                                <div className='md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16  '><img alt='logo' src={secreteriumLogoPartners} className={styles.partnerLogo}/></div><div className='sm:text-lg md:block text-accent-1' ><h1 className='text-light-blue font-bold'>Secretarium</h1><br></br>Datalign is built by Secretarium a deep tech start up specliaisng in cryptography, Privacy Enhancing Technologies and privacy</div></div>
-                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='intel' src={intel}  className={styles.partnerLogo}/></div><div className='sm:text-lg md:block text-accent-1'><h1 className='pt-4 text-light-blue font-bold'>Intel</h1><br></br>Datalign by Secretarium is supported by Intel with the latest hardware and engineering collaboration</div></div>
-                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='swisscom' src={swisscom}  className={styles.partnerLogo}/></div><div className='sm:text-lg md:block text-accent-1'><h1 className='text-light-blue font-bold'>Swisscom</h1><br></br>Datalign can be hosted by Secretarium's partner Swisscom to benefit from Swiss privacy law and neutral jurisdiction </div></div>
+                                <div className='md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16  '><img alt='logo' src={secreteriumLogoPartners} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1' ><h1 className='text-light-blue font-bold'>Secretarium</h1><br></br>Datalign is built by Secretarium a deep tech start up specliaisng in cryptography, Privacy Enhancing Technologies and privacy</div></div>
+                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='intel' src={intel} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1'><h1 className='pt-4 text-light-blue font-bold'>Intel</h1><br></br>Datalign by Secretarium is supported by Intel with the latest hardware and engineering collaboration</div></div>
+                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='swisscom' src={swisscom} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1'><h1 className='text-light-blue font-bold'>Swisscom</h1><br></br>Datalign can be hosted by Secretarium's partner Swisscom to benefit from Swiss privacy law and neutral jurisdiction </div></div>
                             </div>
                         </div>
                     </div>
@@ -139,10 +139,10 @@ const Index: React.FC = () => {
                         <div className="flex">
                             <div className="w-full text-center px-8 py-20">
                                 <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold">
-                                   Partner Enquiries
+                                    Partner Enquiries
                                 </h2>
                                 <h3 className="text-base md:text-xl  text-accent-1 ">
-                                   If you're interested in finding out more about technology, or how confidential computing could help you collaborate better on data, we'd love to hear from you at  <p className="text-lg pb-12 text-blue-500">
+                                    If you're interested in finding out more about technology, or how confidential computing could help you collaborate better on data, we'd love to hear from you at  <p className="text-lg pb-12 text-blue-500">
                                         <a href="mailto:contact@datalign.co.uk">contact@datalign.co.uk</a>
                                     </p>
                                 </h3>
