@@ -16,7 +16,6 @@
 
 .navBar img {
     height: 3rem;
-    display: inline-block;
     transition: height 300ms ease-in-out;
 }
 

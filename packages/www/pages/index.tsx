@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Head from 'next/head';
 import styles from './index-styles.module.css';
 import PostTitle from '../components/post-title';
 import Container from '../components/container';
@@ -15,11 +14,10 @@ const Index: React.FC = () => {
     return (
         <>
             <Layout>
+                <div className={styles.lightTriangle}></div>
                 <section className={`overflow-hidden ${styles.logoBackground}`} >
                     <Container>
-                        <div className={styles.lightTriangle}></div>
                         <div className={styles.darkTriangle}></div>
-                        <img alt='mainlogo' src={mainLogo} className={`sm:pt-4 ${styles.logo} block `} />
                         <div className="text-left py-8 pb-32 flex flex-col lg:flex-row  text-medium-blue">
                             <div className="sm:w-2/3 md:px-12 md:px-8 lg:w-1/2 text-white">
                                 <PostTitle>Datalign <br></br> by Secretarium</PostTitle>
