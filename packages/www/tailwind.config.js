@@ -3,11 +3,19 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'accent-1': '#1ca8e1',
+                'accent-1': '#111C4E',
                 'accent-2': '#e95c59',
-                'blue-100': '#EDF3F9',
-                'blue-500': '#6CB2E3',
-                'blue-900': '#1E2346'
+                'gray-100': '#fafafa',
+                'gray-200': '#F8FAFB',
+                'pink-200': '#EB5C59',
+                'light-blue': '#3CBFF0',
+                'medium-blue': '#2558A3'
+            },
+            screens: {
+                sm: '320px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px'
             },
             spacing: {
                 28: '4rem'
@@ -21,11 +29,11 @@ module.exports = {
             fontSize: {
                 // '5xl': '1.5rem',
                 // '6xl': '2.1rem',
-                // '7xl': '3.5rem',
+                // '7xl': '5.5rem'
                 // '8xl': '4.25rem'
             },
             fontFamily: {
-                sans: 'Arial, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+                sans: 'Poppins, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
             },
             boxShadow: {
                 small: '0 5px 10px rgba(0, 0, 0, 0.12)',

@@ -58,9 +58,9 @@ const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
         <>
             <Meta />
             <Sticky
-            // className={layoutStyles.stickyPanel}
-            // stickyClassName={layoutStyles.stuck}
-            // onFixedToggle={(fixed) => setFixedToggle(fixed)}
+                className={layoutStyles.stickyPanel}
+                stickyClassName={layoutStyles.stuck}
+                onFixedToggle={(fixed) => setFixedToggle(fixed)}
             >
                 <NavBar fixedToggle={fixedToggle} />
             </Sticky>
