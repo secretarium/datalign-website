@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import styles from './index-styles.module.css';
 import PostTitle from '../components/post-title';
 import Container from '../components/container';
-import macbookPro from '../public/assets/images/macbookProDataline.svg';
+import macbookPro from '../public/assets/images/macbookProDatalign.svg';
 import secreteriumLogoPartners from '../public/assets/images/secretariumLogo.svg';
 import intel from '../public/assets/images/intelLogo.svg';
 import swisscom from '../public/assets/images/swisscomLogo.svg';
