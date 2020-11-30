@@ -6,7 +6,7 @@ import Container from '../components/container';
 import macbookPro from '../public/assets/images/macbookProDataline.svg';
 import secreteriumLogoPartners from '../public/assets/images/secretariumLogo.svg';
 import intel from '../public/assets/images/intelLogo.svg';
-import swisscom from '../public/assets/images/swisscom.svg';
+import swisscom from '../public/assets/images/swisscomLogo.svg';
 import macWhite from '../public/assets/images/whiteMac.svg';
 import Head from 'next/head';
 
