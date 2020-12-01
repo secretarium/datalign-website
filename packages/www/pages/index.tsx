@@ -3,14 +3,15 @@ import Layout from '../components/layout';
 import styles from './index-styles.module.css';
 import PostTitle from '../components/post-title';
 import Container from '../components/container';
-import macbookPro from '../public/assets/images/macbookProDataline.svg';
-import secreteriumLogoPartners from '../public/assets/images/secretarium.svg';
-import intel from '../public/assets/images/intel.svg';
-import swisscom from '../public/assets/images/swisscom.svg';
+import macbookPro from '../public/assets/images/macbookProDatalign.svg';
+import secreteriumLogoPartners from '../public/assets/images/secretariumNavyLogo.svg';
+import intel from '../public/assets/images/intelLogo.svg';
+import swisscom from '../public/assets/images/swisscomLogo.svg';
 import macWhite from '../public/assets/images/whiteMac.svg';
 import Head from 'next/head';
 
 const Index: React.FC = () => {
+
     return (
         <>
             <Head>
@@ -31,9 +32,9 @@ const Index: React.FC = () => {
                         </div>
                     </Container>
                 </section>
-                <Container >
+                <Container padding='sm:mx-2 md:mx-auto'>
                     <div className="flex ">
-                        <div className="w-full text-center px-8 py-20 ">
+                        <div className="sm:pt-10 pt-0 w-full text-center px-8 md:py-20 ">
                             <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold">
                                 Provably confidential collaboration with peers
                             </h2>
@@ -48,7 +49,7 @@ const Index: React.FC = () => {
                     </div>
                 </Container>
                 <section className='bg-gray-200  overflow-hidden '>
-                    <Container >
+                    <Container padding='sm:mx-2 md:mx-auto'>
                         <div className="md:flex">
                             <div className="block text-center w-full md:w-w-1/2 md:text-left px-8 py-16 ">
                                 <h2 className="  text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold ">
@@ -62,7 +63,7 @@ const Index: React.FC = () => {
                                 </p>
                             </div>
                             <div className='md:w-1/2  lg:pt-0 '>
-                                <img alt='computerMac' src={macbookPro} className={`${styles.iconMacPro}`} />
+                                <img alt='computerMac' src={macbookPro} className={`${styles.iconMacPro} sm:pb-16 md:pb-0`} />
                             </div>
                         </div>
                     </Container>
@@ -85,7 +86,7 @@ const Index: React.FC = () => {
                     </Container>
                 </section>
                 <section className='bg-gray-200'>
-                    <Container >
+                    <Container>
                         <div className="md:flex ">
                             <div className='sm:block sm:pl-16 pt-4 md:float-left md:pt-16 lg:pt-8'>
                                 <img alt='computerMac' src={macWhite} className={`${styles.iconMac} `} />
@@ -105,7 +106,7 @@ const Index: React.FC = () => {
                     </Container>
                 </section>
                 <section className='bg-medium-blue  transform -skew-y-3'>
-                    <Container>
+                    <Container padding='sm:mx-2 md:mx-auto'>
                         <div className="flex">
                             <div className="w-full text-center px-8 py-20 transform skew-y-3">
                                 <h2 className="text-2xl md:text-3xl pb-5 text-white font-bold lg:text-4xl">
@@ -115,30 +116,30 @@ const Index: React.FC = () => {
                                     Datalign has been used by some of the largest banks in the world and has alredy been trailed to succesfullt reconcile millions of records across peers securely
                                 </p>
                                 <p className="text-lg  md:text-2xl pb-12 text-white ">
-                                    It is part of the product suite for the DANIE group: a community of finacical instiations harnessing the altes pricvacy and enhancing technology to collaborate and share insight securely.
+                                    It is part of the product suite for the DANIE group: a community of financial instiations harnessing the altes pricvacy and enhancing technology to collaborate and share insight securely.
                                 </p>
                             </div>
                         </div>
                     </Container>
                 </section>
-                <Container>
+                <Container padding='sm:mx-2 md:mx-auto'>
                     <div>
                         <div className="w-full text-center px-8 py-20">
                             <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold lg:text-5xl">
                                 Who's behind Datalign?
                             </h2>
                             <div className="sm:w-full text-accent-1 text-base md:text-xl text-center lg:flex ">
-                                <div className='md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16  '><img alt='logo' src={secreteriumLogoPartners} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1' ><h1 className='text-light-blue font-bold'>Secretarium</h1><br></br>Datalign is built by Secretarium a deep tech start up specliaisng in cryptography, Privacy Enhancing Technologies and privacy</div></div>
-                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='intel' src={intel} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1'><h1 className='pt-4 text-light-blue font-bold'>Intel</h1><br></br>Datalign by Secretarium is supported by Intel with the latest hardware and engineering collaboration</div></div>
-                                <div className='sm:pt-6 md:w-1/2 inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='swisscom' src={swisscom} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1'><h1 className='text-light-blue font-bold'>Swisscom</h1><br></br>Datalign can be hosted by Secretarium's partner Swisscom to benefit from Swiss privacy law and neutral jurisdiction </div></div>
+                                <div className='md:w-1/3 md:inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16  '><img alt='logo' src={secreteriumLogoPartners} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1' ><h1 className='text-light-blue font-bold'>Secretarium</h1><br></br><div className='text-accent-1'>Datalign is built by Secretarium a deep tech start up specliaisng in cryptography, Privacy Enhancing Technologies and privacy</div></div></div>
+                                <div className='sm:pt-6 md:pt-0 md:w-1/3 md:inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='intel' src={intel} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1 text-'><h1 className='pt-4 text-light-blue font-bold'>Intel</h1><br></br><div className='text-accent-1'>Datalign by Secretarium is supported by Intel with the latest hardware and engineering collaboration</div></div></div>
+                                <div className='sm:pt-6 md:pt-0 md:w-1/3 md:inline-block'><div className='sm:w-full flex justify-center pt-8 md:pt-16'><img alt='swisscom' src={swisscom} className={styles.partnerLogo} /></div><div className='sm:text-lg md:block text-accent-1'><h1 className='text-light-blue font-bold'>Swisscom</h1><br></br><div className='text-accent-1'>Datalign can be hosted by Secretarium's partner Swisscom to benefit from Swiss privacy law and neutral jurisdiction</div></div></div>
                             </div>
                         </div>
                     </div>
                 </Container>
                 <section className='bg-gray-200'>
-                    <Container>
+                    <Container padding='sm:mx-2 md:mx-auto'>
                         <div className="flex">
-                            <div className="w-full text-center px-8 py-20">
+                            <div className="w-full text-center px-8 md:py-20">
                                 <h2 className="text-2xl md:text-3xl pb-5 text-accent-1 font-extrabold">
                                     Partner Enquiries
                                 </h2>

@@ -1,5 +1,5 @@
 .banner {
-    background-image: url(../public/assets/images/logo_white.svg);
+    background-image: url(../public/assets/images/logoWhite.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 500% 120%;
@@ -55,7 +55,7 @@
 
     @media (min-width: 320px) {
         .iconMacPro {
-        height:25rem;
+        height:auto;
         width: auto;
         }
     }
@@ -161,12 +161,12 @@
 
     @media (min-width: 320px) {
         .partnerLogo {
-            height:6rem;
+            height:4rem;
         }
     }
 
     @media (min-width: 768px) {
         .partnerLogo {
-            height:6rem;
+            height:4rem;
         }
     }

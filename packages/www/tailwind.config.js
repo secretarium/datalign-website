@@ -33,7 +33,7 @@ module.exports = {
                 // '8xl': '4.25rem'
             },
             fontFamily: {
-                sans: 'Poppins, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+                sans: 'Ubuntu, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
             },
             boxShadow: {
                 small: '0 5px 10px rgba(0, 0, 0, 0.12)',

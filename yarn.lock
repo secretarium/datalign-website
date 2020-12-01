@@ -1911,9 +1911,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@secretarium/dataline-website@workspace:.":
+"@secretarium/datalign-website@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@secretarium/dataline-website@workspace:."
+  resolution: "@secretarium/datalign-website@workspace:."
   dependencies:
     "@commitlint/config-conventional": 11.0.0
     "@release-it/conventional-changelog": 2.0.0
@@ -1935,9 +1935,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@secretarium/dataline-www@workspace:packages/www":
+"@secretarium/datalign-www@workspace:packages/www":
   version: 0.0.0-use.local
-  resolution: "@secretarium/dataline-www@workspace:packages/www"
+  resolution: "@secretarium/datalign-www@workspace:packages/www"
   dependencies:
     "@fortawesome/fontawesome-svg-core": 1.2.32
     "@fortawesome/free-brands-svg-icons": 5.15.1
